@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Industrial Aftermath | Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="background-overlay"></div>
+    
+    <div class="container">
+        <header class="header">
+            <h1>INDUSTRIAL AFTERMATH</h1>
+            <div class="time-info">
+                <div class="digital-clock" id="clock"></div>
+                <div class="date" id="date"></div>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <section class="weather-section">
+                <div class="weather-card glass">
+                    <h2><i class="fas fa-location-dot"></i> Banyuwangi</h2>
+                    <div class="weather-info">
+                        <div class="weather-icon">
+                            <i class="fas fa-cloud-sun" id="weather-icon"></i>
+                        </div>
+                        <div class="weather-details">
+                            <div class="temperature" id="temperature">--°C</div>
+                            <div class="conditions" id="conditions">Loading...</div>
+                            <div class="humidity-wind">
+                                <span id="humidity"><i class="fas fa-droplet"></i> --%</span>
+                                <span id="wind"><i class="fas fa-wind"></i> -- km/h</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="calendar-section">
+                <div class="calendar-card glass">
+                    <h2><i class="far fa-calendar-alt"></i> Calendar</h2>
+                    <div class="mini-calendar" id="calendar"></div>
+                </div>
+            </section>
+
+            <section class="quick-links">
+                <h2><i class="fas fa-rocket"></i> Quick Launch</h2>
+                <div class="links-grid">
+                    <!-- These would be your clickable icon links -->
+                    <a href="#" class="link-card glass">
+                        <img src="assets/icons/icon1.png" alt="Link 1" class="link-icon">
+                        <span>Work</span>
+                    </a>
+                    <a href="#" class="link-card glass">
+                        <img src="assets/icons/icon2.png" alt="Link 2" class="link-icon">
+                        <span>Mail</span>
+                    </a>
+                    <a href="#" class="link-card glass">
+                        <img src="assets/icons/icon3.png" alt="Link 3" class="link-icon">
+                        <span>Drive</span>
+                    </a>
+                    <a href="#" class="link-card glass">
+                        <img src="assets/icons/icon4.png" alt="Link 4" class="link-icon">
+                        <span>Music</span>
+                    </a>
+                    <a href="#" class="link-card glass">
+                        <img src="assets/icons/icon5.png" alt="Link 5" class="link-icon">
+                        <span>News</span>
+                    </a>
+                    <a href="#" class="link-card glass">
+                        <img src="assets/icons/icon6.png" alt="Link 6" class="link-icon">
+                        <span>Social</span>
+                    </a>
+                </div>
+            </section>
+
+            <section class="rss-feeds">
+                <h2><i class="fas fa-rss"></i> News Feeds</h2>
+                <div class="feeds-container glass">
+                    <div class="feed-item">
+                        <h3>Headline News</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris.</p>
+                        <span class="feed-time">2 hours ago</span>
+                    </div>
+                    <div class="feed-item">
+                        <h3>Tech Update</h3>
+                        <p>Vivamus luctus urna sed urna ultricies ac tempor dui sagittis.</p>
+                        <span class="feed-time">5 hours ago</span>
+                    </div>
+                    <div class="feed-item">
+                        <h3>Weather Alert</h3>
+                        <p>Donec lobortis risus a elit. Etiam tempor. Ut ullamcorper, ligula eu tempor congue.</p>
+                        <span class="feed-time">1 day ago</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
